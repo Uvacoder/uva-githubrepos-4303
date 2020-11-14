@@ -34,6 +34,14 @@ export default {
 }
 }
 
+@media only screen and (max-width: 800px) {
+.input-group{
+    width: 80%;
+    margin: 2% 10% 5% 10%;
+}
+}
+
+
 h2{
     text-align:center;
     color:red;
