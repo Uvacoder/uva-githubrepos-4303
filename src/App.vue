@@ -1,19 +1,25 @@
 <template>
 
-  <HelloWorld/>
+  <Projects class="pad"></Projects>
+  <Input/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Projects from './components/Projects.vue'
+import Input from './components/Input.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Projects,
+    Input
   }
 }
 </script>
 
 <style>
+.pad{
+  padding: 3.5% 8% 3.5% 8%;
+}
 
 </style>

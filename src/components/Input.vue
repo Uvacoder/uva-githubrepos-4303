@@ -1,0 +1,41 @@
+<template>
+
+<div>
+<h2>Check you own repo here</h2>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Enter username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+</div>
+</div>
+
+
+</template>
+
+<script>
+
+export default {
+  name: 'Input',
+  data(){
+    return {
+      repos: {}
+    };
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+@media only screen and (min-width: 800px) {
+.input-group{
+    width: 50%;
+    margin: 2% 20% 5% 25%;
+}
+}
+
+h2{
+    text-align:center;
+    color:red;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
  <div class="row">
 
-      <div class="col-md-3 " v-for="(repo,index) in repos" :key="index">
+      <div class="col-md-4 " v-for="(repo,index) in repos" :key="index">
       <a v-bind:href=repo.html_url>
         <div class="card" >
           <div class="card-body">
@@ -28,7 +28,7 @@
 <script>
 
 export default {
-  name: 'HelloWorld',
+  name: 'Projects',
   data(){
     return {
       repos: {}
