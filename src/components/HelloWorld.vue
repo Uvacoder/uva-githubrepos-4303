@@ -7,8 +7,8 @@
           <div class="card-body">
             <h5 class="card-title" >{{repo.name}}</h5>
             <p class="card-text">{{repo.description}}</p>
-            <h6 class="card-subtitle mb-2 text-muted">related topics</h6>
-            <p class="card-text">stars {{index}}   <span class="float-right">pull req</span></p>
+            <h6 class="card-subtitle mb-2 text-muted">Language: {{repo.language}}</h6>
+            <p class="card-text">stars {{repo.forks_count}}   <span class="float-right">pull req {{" " + repo.forks_count}}</span></p>
             
             <div class="text-center">
               <a v-bind:href=repo.homepage class="btn btn-primary" style="width: 60%; margin-top: 20px;">website</a>
