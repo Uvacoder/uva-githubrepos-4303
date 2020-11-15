@@ -31,33 +31,27 @@ export default {
   name: 'Projects',
   data(){
     return {
-      repos: {}
+
     };
   },
-  async created(){
-      
-      const response = await fetch('https://api.github.com/users/Kash15if/repos')
-      
-      this.repos = await response.json();
-      await console.log(this.repos);
-
-  }
+  props:['repos']
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .btn{
-        background-color: rgb(59, 17, 128);
-        color: white;
-        width: auto;
-        
-    }
+
     a{
       text-decoration: none;
       color:#263238;
     }
     .card{
       margin-top: 25px;
+    }
+    
+    .btn{
+        background-color: rgb(59, 17, 128);
+        color: white;
+        width: auto;
     }
 </style>

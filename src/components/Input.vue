@@ -3,9 +3,11 @@
 <div>
 <h2>Check you own repo here</h2>
 <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Enter username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <input type="text" class="form-control" placeholder="Enter username" aria-label="Recipient's username" 
+  aria-describedby="basic-addon2"
+  v-model="username">
   <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button" v-on:click="getRepo()">Button</button>
   </div>
 </div>
 </div>
@@ -19,8 +21,13 @@ export default {
   name: 'Input',
   data(){
     return {
-      repos: {}
+      username: ""
     };
+  },
+  methods:{
+    getRepo: function(){
+      this.$emit('change-repo',this.username);
+    }
   }
 }
 </script>
