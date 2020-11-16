@@ -8,7 +8,7 @@
             <h5 class="card-title" >{{repo.name}}</h5>
             <p class="card-text">{{repo.description}}</p>
             <h6 class="card-subtitle mb-2 text-muted">Language: {{repo.language}}</h6>
-            <p class="card-text">Watched {{repo.watchers_count"}}   <span class="float-right">forks {{" " + repo.forks_count}}</span></p>
+            <p class="card-text">Stars {{repo.stargazers_count}}   <span class="float-right">forks {{" " + repo.forks_count}}</span></p>
             
             <div class="text-center">
               <a v-bind:href=repo.homepage class="btn btn-primary" style="width: 60%; margin-top: 20px;">website</a>
