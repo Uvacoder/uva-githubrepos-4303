@@ -7,7 +7,7 @@
   aria-describedby="basic-addon2"
   v-model="username">
   <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button" v-on:click="getRepo()">Button</button>
+    <button class="btn btn-outline-secondary" type="button" v-on:click="getRepo()">Search</button>
   </div>
 </div>
 </div>
