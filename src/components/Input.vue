@@ -1,7 +1,7 @@
 <template>
 
 <div>
-<h2>Check you own repo here</h2>
+<h2>Check you own github repo here</h2>
 <div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="Enter username" aria-label="Recipient's username" 
   aria-describedby="basic-addon2"
