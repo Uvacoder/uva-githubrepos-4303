@@ -49,7 +49,7 @@ export default {
 }
 
 
-h2{
+h3{
     text-align:center;
     color:red;
 }
