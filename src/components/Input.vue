@@ -39,12 +39,17 @@ export default {
     width: 50%;
     margin: 2% 20% 5% 25%;
 }
+
 }
 
 @media only screen and (max-width: 800px) {
 .input-group{
     width: 80%;
     margin: 2% 10% 5% 10%;
+}
+
+h3{
+  font-size: 20px;
 }
 }
 
