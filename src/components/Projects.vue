@@ -2,7 +2,7 @@
  <div class="row">
 
       <div class="col-md-4 " v-for="(repo,index) in repos" :key="index">
-      <a v-bind:href=repo.html_url>
+      <a v-bind:href=repo.html_url target="_blank" rel="noopener noreferrer">
         <div class="card" >
           <div class="card-body">
             <h5 class="card-title" >{{repo.name}}</h5>
@@ -11,7 +11,11 @@
             <p class="card-text">Stars {{repo.stargazers_count}}   <span class="float-right">forks {{" " + repo.forks_count}}</span></p>
             
             <div class="text-center">
-              <a v-bind:href=repo.homepage class="btn btn-primary" style="width: 60%; margin-top: 20px;">website</a>
+              <a v-bind:href=repo.homepage class="btn btn-primary" target="_blank"
+                rel="noopener noreferrer" style="width: 60%; margin-top: 20px;"
+              >
+              website
+              </a>
             </div>
             
           </div>
